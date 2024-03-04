@@ -1,0 +1,549 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* container first */
+
+.first {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../pictures/dues-img.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+.heading {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+.heading .head-links ul li{
+    display: inline-flex;
+    list-style: none;
+}
+
+.head-links ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left : 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.head-links ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: 0.8s ease-in-out;
+}
+
+.head-links ul li a:hover::after {
+    height: 2px;
+}
+/* Js manipulation */
+.header-scrolled {
+    background: linear-gradient(60deg, rgb(151, 95, 224) 20%, rgb(135, 87, 198) 40%, rgb(127, 62, 206) 100%);
+    z-index: 1000;
+}
+/* js end */
+
+/* contact us btn */
+.btn-contact a {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #713b8d;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.50s ease-in-out;
+} 
+
+.btn-contact a:hover {
+    background-color:  #713b8d;
+    color: #ffffff;
+    border: 2px solid white;
+}
+
+/* contacts us btn ends */
+
+
+/* first content of payment */
+.payment-content-1 {
+        position: relative;
+        width: inherit;
+        height: inherit;
+        display: flex;
+        text-align: center;
+        place-items: center;
+        justify-content: center;
+        background-color: #0000004e;
+}
+
+.payment-content-1 .pay-heading  {
+    margin-top: 30px;
+}
+
+.pay-heading h1 {
+    font-size: 3.3rem;
+    font-weight: 400;
+    color: white;
+}
+
+.pay-heading h3 {
+    font-size: 2.0rem;
+    font-weight: 400;
+    color: white;
+}
+
+.payment-read {
+    width: 100%;
+    height: 50px;
+    column-gap: 300px;
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.payment-read a {
+    width: 130px;
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #713b8d;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.53s ease-in-out;
+}
+
+.payment-read a:hover {
+    color: #713b8d;
+    background-color: #ffffff;
+}
+
+/* first content of payment ends */
+
+
+/* second content  */
+
+.payment-second-txt {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(108, 104, 113, 0.337);
+}
+
+.leading-pay  {
+    position: relative;
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leading-pay h1 {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.leading-pay h1::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 15%;
+    right: 0;
+    width: 60%;
+    height: 3px;
+    border-radius: 7px;
+    background-color: #713b8d;
+}
+
+/* payment paragraph */
+
+.payment-para {
+    position: absolute;
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+}
+
+.payment-para .content-centering {
+    position: relative;
+    width: 80%;
+    height: 117vh;
+    display: grid;
+    place-items: center;
+}
+
+.content-centering .benefit-txt {
+    width: 850px;
+    height: 200px;
+    background-color: #ffffff56;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 3px 4px 15px #723b8d4e;
+}
+
+.benefit-txt:nth-child(even) {
+    margin-left: -120px;
+}
+
+.benefit-txt:nth-child(odd) {
+    margin-left: 120px;
+}
+
+.benefit-txt .fit-brevity, .benefit-txt .fit-num_name  {
+    width: 45%;
+    display: grid;
+    place-items: center;
+}
+
+.benefit-txt .fit-brevity p, .benefit-txt .fit-num_name p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.benefit-txt .fit-num_name h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.benefit-txt .fit-num_name h1 {
+    width: 55px;
+    height: 55px;
+    background-color: #723b8d64;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.benefit-txt .fit-brevity p {
+    padding: 10px;
+    text-align: left;
+}
+
+/* second content ends */
+
+
+ /* third content  */
+
+ .making-payment {
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.754), rgba(255, 255, 255, 0.754), rgba(255, 255, 255, 0.754)), url('../pictures/form-img.jpg');
+    background-position: center;
+    object-fit: contain;
+    background-size: contain;
+
+}
+
+ .making-payment .form-container {
+    position: relative;
+    width: 60%;
+    height: 85vh;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form-container form {
+    width: 700px;
+    height: 600px;
+    background-color: #c49e4ccb;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+ }
+
+ .pay-txt {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .pay-txt h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 10px;
+ }
+
+.pay-txt p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+input {
+    width: 320px;
+    height: 45px;
+    padding: 0 8px;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    color: #0a0909eb;
+    background-color: #fafafa60;
+    font-size: 1.02rem;
+}
+
+select {
+    height: 40px;
+    width: 320px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #1f1c1c;
+    background-color: #fafafa60;
+    font-size: 0.93rem;
+}
+
+select::placeholder {
+    content: "Select Programme";
+}
+
+.one-1 {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.two-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#amount {
+    width: 658px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.send-now {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+
+}
+
+.send-now button {
+    width: 350px;
+    height: 6vh;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background-color: #713b8d;
+    transition: all 0.5s ease-in-out;
+}
+
+.send-now button:hover {
+    background-color: #ffffff;
+    color: #713b8d;
+}
+
+
+  /* third content ends */
+
+/* footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(200, 183, 216);
+}
+
+.foot-container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding: 30px;
+    padding: 40px;
+}
+
+.link-header p{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.left-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot ul li,.left-foot ul {
+    margin-top: 8px;
+}
+
+.right-foot ul li,.left-foot ul li {
+    list-style: none;
+   margin-top: 3px;
+   font-weight: 400;
+   font-size: 1.1rem;
+   color: #460a6eee; 
+}
+
+.right-foot ul li a,.left-foot ul li a{
+    text-decoration: none;
+    color: #460a6eee;
+}
+
+.right-foot ul li a:hover,.left-foot ul li a:hover{
+    color: #f3f3f3ee;
+}
+
+
+
+
+.left-one {
+    width: 320px;
+  
+}
+
+.copy-right {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(200, 183, 216);
+}
+
+.copy-right p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* footer ends*/
+
+
+/* Media query for screens with a width between 600px and 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .foot-container {
+        height: 45vh; 
+        background-color: rgb(200, 183, 216);
+    }
+
+    .heading {
+        width: 100%;
+        height: 10vh;
+    }
+     
+    .pay-heading h1 {
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+
+    .pay-ask p {
+      font-size: 1.3rem;
+      width: 750px;
+    }
+
+    .btn-contact a {
+        font-size: 1em; 
+    }
+ 
+    .timetable {
+        width: 100%;
+        height: 179vh;
+    }
+
+    .sub-tables .sub-1 {
+        width: 1000px;
+        height: 118%;
+    }
+
+    .sub-1 .table-drop  {
+        width: 95%; 
+    }
+ 
+
+    .table-drop:has(.checking:checked) {
+        height: 78vh;
+        transition: all 0.80s ease-in-out;
+    }
+    
+  
+    footer {
+        height: 80vh;
+    }
+
+    .footer-content  {
+       height: 70vh;
+       flex-direction: column;
+    }
+    
+    .side-para p{
+        width: 300px;
+    }
+    
+    .links ul li{
+        font-size: 16px;
+    }
+}

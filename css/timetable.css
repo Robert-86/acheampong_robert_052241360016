@@ -1,0 +1,478 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* container first */
+
+.first {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.708)), url('../pictures/timetable\ bg.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+.heading {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+.heading .head-links ul li{
+    display: inline-flex;
+    list-style: none;
+}
+
+.head-links ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left : 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.head-links ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: 0.8s ease-in-out;
+}
+
+.head-links ul li a:hover::after {
+    height: 2px;
+}
+/* Js manipulation */
+.header-scrolled {
+    background: linear-gradient(60deg, rgb(151, 95, 224) 20%, rgb(135, 87, 198) 40%, rgb(127, 62, 206) 100%);
+    z-index: 1000;
+}
+/* js end */
+
+/* contact us btn */
+.btn-contact a {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #713b8d;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.50s ease-in-out;
+} 
+
+.btn-contact a:hover {
+    background-color:  #713b8d;
+    color: #ffffff;
+    border: 2px solid white;
+}
+
+/* contacts us btn ends */
+
+/* heading ends */
+
+
+
+/* first content of payment */
+.payment-content-1 {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+
+}
+
+.payment-content-1 .pay-heading  {
+margin-top: 30px;
+}
+
+.pay-heading h1 {
+font-size: 3.3rem;
+font-weight: 400;
+color: white;
+}
+
+.pay-heading p {
+font-size: 1.4rem;
+font-weight: 400;
+width: 1000px;
+color: white;
+margin-top: 25px;
+}
+
+.payment-read {
+width: 100%;
+height: 50px;
+column-gap: 300px;
+display: grid;
+place-items: center;
+margin-top: 50px;
+}
+
+.payment-read a {
+width: 130px;
+height: 50px;
+background-color: aqua;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+color: white;
+background-color: #713b8d;
+text-decoration: none;
+font-size: 1.2rem;
+transition: all 0.53s ease-in-out;
+}
+
+.payment-read a:hover {
+color: #713b8d;
+background-color: #ffffff;
+}
+
+/* first content of payment ends */
+
+
+/*  timetable container */
+
+.timetable {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background: #b79bc55b;
+}
+
+.leading-pay  {
+    position: relative;
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leading-pay h1 {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.leading-pay h1::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 15%;
+    right: 0;
+    width: 60%;
+    height: 3px;
+    border-radius: 7px;
+    background-color: #713b8d;
+}
+
+.view {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: #ffffffdd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view P {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dc4e16ee;
+}
+
+.sub-tables {
+    position: absolute;
+    width: 85%;
+    height: 100vh;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.sub-tables .sub-1 {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #723b8d69;
+    border-radius: 20px;
+}
+
+.sub-1 .table-drop {
+    position: relative;
+    width: 90%;
+    height: 45px;
+    background-color: rgb(246, 240, 240);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+   
+}
+
+.top-table {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.top {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #e5e0e790;
+}
+
+.top-table .table-name p,.top-table .table-levl {
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+
+.table-toggle {
+    width: 35px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+
+}
+
+.table-toggle .checking {
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.table-drop:has(.checking:checked) {
+    height: 60vh;
+    transition: all 0.80s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cac6c6;
+}
+
+td {
+    font-size: 1.1rem;
+    font-weight: 400;
+    height: 77px;
+}
+
+td:nth-child(1) {
+    font-family: 600;
+    font-size: 1.3rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/*  timetable container */
+
+
+
+
+ 
+/* footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(200, 183, 216);
+}
+
+.foot-container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding: 30px;
+    padding: 40px;
+}
+
+.link-header p{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.left-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot ul li,.left-foot ul {
+    margin-top: 8px;
+}
+
+.right-foot ul li,.left-foot ul li {
+    list-style: none;
+   margin-top: 3px;
+   font-weight: 400;
+   font-size: 1.1rem;
+   color: #460a6eee; 
+}
+
+.right-foot ul li a,.left-foot ul li a{
+    text-decoration: none;
+    color: #460a6eee;
+}
+
+.right-foot ul li a:hover,.left-foot ul li a:hover{
+    color: #f3f3f3ee;
+}
+
+
+
+
+.left-one {
+    width: 320px;
+  
+}
+
+.copy-right {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(200, 183, 216);
+}
+
+.copy-right p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* footer ends*/
+
+
+
+/* Media query for screens with a width between 600px and 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .first {
+        height: 100vh; 
+    }
+
+
+    .heading {
+        width: 100%;
+        height: 10vh;
+    }
+     
+    .pay-heading h1 {
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+
+    .pay-ask p {
+      font-size: 1.3rem;
+      width: 750px;
+    }
+
+    .btn-contact a {
+        font-size: 1em; 
+    }
+ 
+    .timetable {
+        width: 100%;
+        height: 179vh;
+    }
+
+    .sub-tables .sub-1 {
+        width: 1000px;
+        height: 118%;
+    }
+
+    .sub-1 .table-drop  {
+        width: 95%; 
+    }
+ 
+
+    .table-drop:has(.checking:checked) {
+        height: 78vh;
+        transition: all 0.80s ease-in-out;
+    }
+    
+  
+    .foot-container {
+        height: 45vh; 
+        background-color: rgb(200, 183, 216);
+    }
+
+  
+
+}
+
+
+@media only screen and (max-width : 1920px) and (max-height : 1080px) {
+    * {
+        box-sizing: border-box;
+    }
+
+
+}

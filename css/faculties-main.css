@@ -1,0 +1,464 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lora', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.overall {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../pictures/high-angle-students-learning-library_23-2149647043.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.heading {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+
+.heading .head-links ul li{
+    display: inline-flex;
+    list-style: none;
+}
+
+.head-links ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left : 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.head-links ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: 0.8s ease-in-out;
+}
+
+.head-links ul li a:hover::after {
+    height: 2px;
+}
+/* Js manipulation */
+.header-scrolled {
+    background: linear-gradient(60deg, rgb(151, 95, 224) 20%, rgb(135, 87, 198) 40%, rgb(127, 62, 206) 100%);
+    z-index: 1000;
+}
+/* js end */
+
+/* contact us btn */
+.btn-contact a {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #713b8d;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.50s ease-in-out;
+} 
+
+.btn-contact a:hover {
+    background-color:  #713b8d;
+    color: #ffffff;
+}
+
+/* contacts us btn ends */
+
+
+/* first content txt-main */
+.txt-main {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: -45px;
+   
+}
+ 
+
+
+.txt-main .txt-1 {
+    margin-bottom: -px;
+    color: white;
+    
+}
+
+.one {
+margin-top: 25px;
+}
+
+.one h1 {
+    font-weight: 200;
+}
+
+.content-pre {
+    width: 1000px;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 1000;
+    color: white;
+}
+
+.content-pre p {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+ .txt-1 .btn-explore {
+   margin-top: 40px;
+   width: inherit;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+/* first content explore btn */
+
+.link-explore {
+    display: grid;
+    place-items: center;
+    width: 130px;
+    height: 40px;
+}
+
+.link-explore a {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    background-color: #713b8d;
+    border-radius: 30px;
+    font-weight: 300;
+    transition: all 0.50s ease-in-out;
+}
+
+.link-explore a:hover {
+    background-color: white;
+    color: #713b8d;
+}
+
+
+/* first content explore btn  ends*/
+
+.faculties {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background-color: rgba(228, 228, 233, 0.907);
+}
+
+/* our faculties heading */
+.faculties .our-faculties {
+    position: relative;
+    width: inherit;
+    height: 10vh;
+    color: black;
+    display: grid;
+    place-items: center;
+}
+
+.our-faculties h2 {
+    position: relative;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.our-faculties h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -3px;
+    left: 40px;
+    right: 0;
+    width: 60%;
+    height: 3px;
+    background-color: #713b8d;
+}
+
+/* our faculties heading ends*/
+
+/* faculties container */
+
+.main-container {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.faculties .faculties-container {
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 6px;
+    place-items: center;
+}
+
+
+
+/* faculties cards */
+
+.faculties .cards {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  flex: 1;
+  background-color: rgba(191, 123, 213, 0.177);
+  border-left: 5px solid #713b8d;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(74, 74, 75,.28) ;
+  border-radius: 3px;
+}
+
+/* card heading */
+
+
+.card-head {
+    position: relative;
+    width: inherit;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-head h4:nth-child(1){
+    margin-left: 10px;
+}
+
+.cards h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+.cards .cards-link {
+    position: relative;
+    display: flex;
+    width: inherit;
+    height: 89px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards-link a {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #713b8d;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.50s ease-in-out;
+}
+
+.cards-link a:hover {
+    background-color: white;
+    color: #713b8d;
+    border: 2px solid #713b8d;
+    transition: all ease-in-out;
+}
+/* faculties container ends*/
+
+
+
+/* footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(200, 183, 216);
+}
+
+.foot-container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding: 30px;
+    padding: 40px;
+}
+
+.link-header p{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.left-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot ul li,.left-foot ul {
+    margin-top: 8px;
+}
+
+.right-foot ul li,.left-foot ul li {
+    list-style: none;
+   margin-top: 3px;
+   font-weight: 400;
+   font-size: 1.1rem;
+   color: #460a6eee; 
+}
+
+.right-foot ul li a,.left-foot ul li a{
+    text-decoration: none;
+    color: #460a6eee;
+}
+
+.right-foot ul li a:hover,.left-foot ul li a:hover{
+    color: #f3f3f3ee;
+}
+
+
+
+
+.left-one {
+    width: 320px;
+  
+}
+
+.copy-right {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(200, 183, 216);
+}
+
+.copy-right p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* footer ends*/
+
+
+/* Media query for screens with a width between 600px and 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .foot-container {
+        height: 45vh; 
+        background-color: rgb(200, 183, 216);
+    }
+
+    .heading {
+        width: 100%;
+        height: 10vh;
+    }
+     
+    .pay-heading h1 {
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+
+    .pay-ask p {
+      font-size: 1.3rem;
+      width: 750px;
+    }
+
+    .btn-contact a {
+        font-size: 1em; 
+    }
+ 
+    .timetable {
+        width: 100%;
+        height: 179vh;
+    }
+
+    .sub-tables .sub-1 {
+        width: 1000px;
+        height: 118%;
+    }
+
+    .sub-1 .table-drop  {
+        width: 95%; 
+    }
+ 
+
+    .table-drop:has(.checking:checked) {
+        height: 78vh;
+        transition: all 0.80s ease-in-out;
+    }
+    
+  
+    footer {
+        height: 80vh;
+    }
+
+    .footer-content  {
+       height: 70vh;
+       flex-direction: column;
+    }
+    
+    .side-para p{
+        width: 300px;
+    }
+    
+    .links ul li{
+        font-size: 16px;
+    }
+}

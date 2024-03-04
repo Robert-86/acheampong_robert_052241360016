@@ -1,0 +1,844 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lora', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.bg-overall {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../pictures/Main_Campus_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.heading {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+
+.heading .head-links ul li{
+    display: inline-flex;
+    list-style: none;
+}
+
+.head-links ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left : 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.head-links ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: 0.8s ease-in-out;
+}
+
+.head-links ul li a:hover::after {
+    height: 2px;
+}
+/* Js manipulation */
+.header-scrolled {
+    background: linear-gradient(60deg, rgb(151, 95, 224) 20%, rgb(135, 87, 198) 40%, rgb(127, 62, 206) 100%);
+    z-index: 1000;
+}
+/* js end */
+
+/* contact us btn */
+.btn-contact a {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #713b8d;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.50s ease-in-out;
+} 
+
+.btn-contact a:hover {
+    background-color:  #713b8d;
+    color: #ffffff;
+}
+
+/* contacts us btn ends */
+
+
+/* first content txt-main */
+.txt-main {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: -45px;
+   
+}
+ 
+
+
+.txt-main .txt-1 {
+    margin-bottom: -px;
+    color: white;
+    
+}
+
+.one {
+margin-top: 25px;
+}
+
+.one h1 {
+    font-weight: 200;
+}
+
+.content-pre {
+    width: 1000px;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 1000;
+    color: white;
+}
+
+ .txt-1 .btn-explore {
+   margin-top: 40px;
+   width: inherit;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+/* first content explore btn */
+
+.link-explore {
+    display: grid;
+    place-items: center;
+    width: 130px;
+    height: 40px;
+}
+
+.link-explore a {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    background-color: #713b8d;
+    border-radius: 30px;
+    font-weight: 300;
+    transition: all 0.50s ease-in-out;
+}
+
+.link-explore a:hover {
+    background-color: white;
+    color: #713b8d;
+}
+
+
+/* first content explore btn  ends*/
+
+
+ /* first content txt-main ends */
+
+.second-content {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f3f8f3;
+}
+
+.second-txt {
+   margin-top: 120px; 
+}
+
+
+.pre-head h2 {
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 50px;
+    display: inline-flex;
+}
+
+ .pre-head h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 19%;
+    width: 60%;
+    height: 3px;
+    background-color: #713b8d;
+    transition: all 0.9s ease-in-out;
+    border-radius: 8px;
+}
+
+
+
+.second-txt .txt-2 p{
+    width: 1200px;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 25px;
+    text-align: justify;
+}
+/* End of second content */
+
+/* Third content */
+
+.third-content {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background-color: rgb(255, 254, 253);
+    display: flex;
+    justify-content: center;
+} 
+
+
+.department {
+   margin: 70px 0;
+}
+
+ .department h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 25px;
+} 
+
+.department h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 45%;
+    right: 0;
+    width: 11%;
+    height: 3px;
+    border-radius: 7px;
+    background-color: #713b8d;
+}
+
+/* Grid content */
+.third-txt .gridy {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+}
+
+
+.card {
+    width: 545px;
+    height: 220px;
+    background-color: rgba(163, 189, 212, 0.819);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 100px 20px 20px 100px;
+}
+
+/* card borders */
+
+.card:nth-child(even) {
+    border-radius: 20px 100px 100px 20px;
+}
+
+.card:nth-child(odd) {
+    border-radius: 100px 20px 20px 100px;
+}
+
+
+.card-img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgba(218, 216, 213, 0.667);
+    display: grid;
+    place-items: center;
+}
+
+.card-img img {
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.right-content {
+    width: 330px;
+}
+
+.right-content .d-name {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.right-content .content {
+    margin-top: 9px;
+}
+
+.card-link {
+    width: 130px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+}
+
+.card-link  a {
+    width: 110px;
+    height: 39px;
+    background-color: rgb(80, 10, 150);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.58s ease-in-out;
+}
+
+.card-link  a:hover {
+    background-color: white;
+    color: rebeccapurple;
+    
+}
+
+/* Grid content ends */
+
+/* Third content ends*/
+
+
+/* fourth-content */
+
+.fourth-content {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: #edededdf;
+}
+
+.fourth-content .head-testimonial {
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    z-index: 100;
+    
+}
+
+.head-testimonial h2 {
+    position: relative;
+    font-weight: 400;
+    font-size: 27px;
+    width: 300px;
+    margin-top: 150px;
+}
+
+.head-testimonial h2::after {
+  position: absolute;
+  content: "";
+  width: 156px;
+  height: 3px;
+  background-color: #713b8d;
+  left: 23%;
+  bottom: -6px;
+}
+
+/* sliding container */
+.testimonial-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth-content .testimonial-track {        
+    position: relative;
+    height: 100vh;
+    width: 80%;
+    margin-top: 90px;
+}
+
+.slider {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin: 35px 0;
+    flex-wrap: wrap;
+}
+
+.slide-1 {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 3px 9px rgb(176, 171, 171);
+    transition: all 0.3s ease-in-out;
+    border-top: 4px solid #713b8d;
+    border-bottom: 4px solid #713b8d;
+    background-color: #e7e1e9;
+    overflow: hidden;
+    flex: 1;
+}
+
+.image-slide {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-slide img {
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 2px 10px rgb(109, 72, 189),  -1px -2px 10px rgb(109, 72, 189);
+}
+
+.stud-name {
+    width: 100%;
+    min-height: 30px;
+    font-size: 21px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stud-name h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.testy-say {
+    width: 100%;
+    height: 145px;
+    display: grid;
+    place-items: center;
+}
+
+.testy-say p {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.depart-name {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.depart-name p {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+
+/* end of forth content */
+
+
+/* Get in touch (Chart) */
+
+.chart {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../pictures/fast-touch\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.chart .chart-heading {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    place-items: center;
+}
+
+.chart-heading h2 {
+    position: relative;
+    font-weight: 400;
+    color: white;
+}
+
+.chart h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 17%;
+    right: 0;
+    width: 65%;
+    height: 3px;
+    background-color: #713b8d;
+}
+
+
+/* Chart content  */
+.chart-content {
+    position: relative;
+    width: 55%;
+    height: 65%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.518);
+}
+
+.chart-content .left-chart {
+    position: relative;
+    height: 100%;
+    width: 45%;
+    background: url("../pictures/fast-get-touch.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.chart-content .right-chart {
+    position: relative;
+    height: 100%;
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+}
+
+.right-chart .right-head {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.right-head h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+/* arranging forms input and btns */
+
+.touch-forms {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+}
+ /* for all input  */
+input {
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #b8b6b6a5;
+    margin-bottom: 16px;
+    padding-left: 4px;
+    font-size: 0.89rem;
+    font-weight: 400;
+}
+
+/* for all placeholder */
+
+::placeholder {
+    padding-left: 4px;
+}
+
+/* all lable  */
+label {
+    margin-left: 4px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.touch-forms .first-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* for styling fullname and email input */
+.same-width {
+  width: 210px;
+}
+
+/* message input */
+.subject, .message_2 {
+    width: 437px;
+}
+
+
+
+textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #b8b6b6a5;
+    font-size: 0.89rem;
+    font-weight: 400;
+}
+
+.message_2 {
+  height: 80px;
+}
+
+/* send message button */
+
+.sub-mit {
+    width: 200px;
+    height: 60px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-mit button {
+    width: 120px ;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #713b8d;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: all 0.58s ease-in-out;
+}
+
+.sub-mit button:hover {
+    background-color: white;
+    color: #713b8d;
+    border: 1px solid #713b8d;
+}
+
+/* arranging forms input and btns ends*/
+
+
+/* Chart content ends*/
+
+/* Get in touch (Chart) ends*/
+
+
+/* footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(200, 183, 216);
+}
+
+.foot-container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding: 30px;
+    padding: 40px;
+}
+
+.link-header p{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.left-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot ul li,.left-foot ul {
+    margin-top: 8px;
+}
+
+.right-foot ul li,.left-foot ul li {
+    list-style: none;
+   margin-top: 3px;
+   font-weight: 400;
+   font-size: 1.1rem;
+   color: #460a6eee; 
+}
+
+.right-foot ul li a,.left-foot ul li a{
+    text-decoration: none;
+    color: #460a6eee;
+}
+
+.right-foot ul li a:hover,.left-foot ul li a:hover{
+    color: #f3f3f3ee;
+}
+
+
+
+
+.left-one {
+    width: 320px;
+  
+}
+
+.copy-right {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(200, 183, 216);
+}
+
+.copy-right p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* footer ends*/
+
+/* Media query for screens with a width between 600px and 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .foot-container {
+        height: 45vh; 
+        background-color: rgb(200, 183, 216);
+    }
+
+    .heading {
+        width: 100%;
+        height: 10vh;
+    }
+     
+    .pay-heading h1 {
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+
+    .pay-ask p {
+      font-size: 1.3rem;
+      width: 750px;
+    }
+
+    .btn-contact a {
+        font-size: 1em; 
+    }
+ 
+    .timetable {
+        width: 100%;
+        height: 179vh;
+    }
+
+    .sub-tables .sub-1 {
+        width: 1000px;
+        height: 118%;
+    }
+
+    .sub-1 .table-drop  {
+        width: 95%; 
+    }
+ 
+
+    .table-drop:has(.checking:checked) {
+        height: 78vh;
+        transition: all 0.80s ease-in-out;
+    }
+    
+  
+    footer {
+        height: 80vh;
+    }
+
+    .footer-content  {
+       height: 70vh;
+       flex-direction: column;
+    }
+    
+    .side-para p{
+        width: 300px;
+    }
+    
+    .links ul li{
+        font-size: 16px;
+    }
+
+    
+}
+
+
+

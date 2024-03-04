@@ -1,0 +1,964 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.bg-overall {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../pictures/Main_Campus_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.heading {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+
+.heading .head-links ul li{
+    display: inline-flex;
+    list-style: none;
+}
+
+.head-links ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left : 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.head-links ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: 0.8s ease-in-out;
+}
+
+.head-links ul li a:hover::after {
+    height: 2px;
+}
+/* Js manipulation */
+.header-scrolled {
+    background: linear-gradient(60deg, rgb(151, 95, 224) 20%, rgb(135, 87, 198) 40%, rgb(127, 62, 206) 100%);
+    z-index: 1000;
+}
+/* js end */
+
+/* contact us btn */
+.btn-contact a {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #713b8d;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.50s ease-in-out;
+} 
+
+.btn-contact a:hover {
+    background-color:  #713b8d;
+    color: #ffffff;
+}
+
+/* contacts us btn ends */
+
+
+/* first content txt-main */
+.txt-main {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: -45px;
+   
+}
+ 
+
+
+.txt-main .txt-1 {
+   font-size: 1.4rem;
+    color: white;
+    
+}
+
+.one {
+margin-top: 25px;
+}
+
+.one h1 {
+    font-weight: 200;
+}
+
+.content-pre {
+    width: 1000px;
+    z-index: 100;
+    color: white;
+}
+
+.content-pre p {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+ .txt-1 .btn-explore {
+   margin-top: 40px;
+   width: inherit;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+/* first content explore btn */
+
+.link-explore {
+    display: grid;
+    place-items: center;
+    width: 130px;
+    height: 40px;
+}
+
+.link-explore a {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    background-color: #713b8d;
+    border-radius: 30px;
+    font-weight: 300;
+    transition: all 0.50s ease-in-out;
+}
+
+.link-explore a:hover {
+    background-color: white;
+    color: #713b8d;
+}
+
+
+/* first content explore btn  ends*/
+
+
+
+.about-the-school {
+    position: relative;
+    width: 100%; 
+    height: 70vh; 
+    background: rgba(189, 180, 180, 0.525);  
+}
+
+.about-the-school .school-content {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+/* About the school header-*/
+
+.header h2 {
+    position: relative;
+    font-weight: 400;
+}
+
+.school-content h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 20%;
+    right: 0;
+    width: 55%;
+    height: 3px;
+    background-color: #713b8d;
+}
+
+
+
+.about-the-school .school-content  p {
+    width: 1200px;
+    line-height: 25px;
+    word-spacing: 3px;
+    font-size: 1.2rem;
+}
+
+/* read link for about school */
+.read-more-btn {
+    width: 120px;
+    height: 5vh;
+}
+
+.read-more-btn a {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #713b8d;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.50s ease-in-out;
+}
+
+.read-more-btn a:hover {
+    background-color: white;
+    color: #713b8d;
+}
+
+/* read link for about school ends*/
+
+
+/* Academics section */
+
+.academics {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #fffdff;
+}
+
+.academics-container {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.academics-container .header {
+    height: 10vh;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.academics-container .header P {
+    position: relative;
+    font-weight: 400;
+}
+
+.header h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 15%;
+    right: 0;
+    width: 70%;
+    height: 3px;
+    background-color: #713b8d;
+}
+
+.academics-container .centering-grid {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.academics-container .gridy-container-card {
+    position: absolute;
+    width: 85%;
+    height: 50vh;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.gridy-container-card .card-c {
+    width: 310px;
+    height: 310px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid rgba(149, 45, 197, 0.9);
+    cursor: pointer;
+}
+
+.card-c .cover {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(149, 45, 197, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover p {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(249, 241, 241);
+}
+
+.card-c .c-logo {
+    position: relative;
+    width: inherit;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.c-logo .c-back-drop {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgb(229, 213, 213), -2px -2px 6px rgb(229, 213, 213);
+}
+
+.c-back-drop span {
+    font-size: 2em;
+    font-weight: 400;
+    text-shadow: 2px 2px 0 rgb(182, 176, 201);;
+}
+
+/* card paragragh */
+.card-c .c-para {
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    padding: 0 9px;
+}
+
+.c-para p {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* card paragragh */
+
+
+/* card link */
+.card-c .c-link {
+    width: 100%;
+    height: 50px;
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-link a {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #713b8d;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:  0.50s ease;
+    border: none;
+}
+
+.c-link a:hover {
+  background-color: white;
+  color: #713b8d;
+  border: 1px solid #713b8d;
+}
+
+/* card link ends */
+
+/* Mission, Vision and Statement  */
+
+.values {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(106, 87, 131, 0.25);
+}
+
+.values .values-heading {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values-heading h2 {
+    position: relative;
+    font-weight: 400;
+}
+
+.values-heading h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 17%;
+    right: 0;
+    width: 65%;
+    height: 3px;
+    background-color: #713b8d;
+}
+
+.values .statement-centering {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+/* marging mission,values and ....  */
+
+.centering .values-content:nth-child(1) {
+   margin-left: -50px;
+}
+
+.centering .values-content:nth-child(2) {
+    margin-left: 50px;
+ }
+
+ .centering .values-content:nth-child(3) {
+    margin-left: -50px;
+ }
+
+ /* marging mission,values and ....  ends  */
+
+/* mission, vision and core values box */
+.values-content {
+    position: relative;
+    width: 1100px;
+    height: 40vh;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 23px;
+    box-shadow:  3px 4px 10px rgb(154, 129, 213) inset;
+    border-radius: 10px;
+}
+
+ .icon-bg-icon {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: rgb(203, 197, 197);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 3px 10px rgb(197, 185, 185);
+}
+
+.mission-txt {
+    width: 700px;
+}
+
+.mission-txt p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.07rem;
+}
+
+.head-motive {
+    display: flex;
+    justify-content: center;
+}
+
+.head-motive h3 {
+   font-size: 26px;
+   text-shadow: 1px 2px 0 rgb(182, 176, 201);
+}
+
+/* Google-location */
+
+.Google-location {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(209, 156, 234, 0.189);
+}
+
+.Google-location .google-heading {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    place-items: center;
+}
+
+.google-heading h2 {
+    position: relative;
+    font-weight: 400;
+}
+
+.google-heading h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 17%;
+    right: 0;
+    width: 65%;
+    height: 3px;
+    background-color: #713b8d;
+}
+
+/* centering google container */
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+
+.googel-contents {
+    display: flex;
+    width: 1200px;
+    height: 65vh;
+    background-color: rgba(177, 165, 167,0.49);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 3px 13px rgb(185, 175, 194) ;
+}
+
+
+.googel-contents .school-logo{
+    position: relative;
+    width: 600px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.googel-contents .g-map{
+    position: relative;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(193, 198, 204);
+}
+
+/* Get in touch (Chart) */
+
+.chart {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../pictures/index-touch.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.chart .chart-heading {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    place-items: center;
+}
+
+.chart-heading h2 {
+    position: relative;
+    font-weight: 400;
+    color: white;
+}
+
+.chart h2::after {
+    position: absolute;
+    content: " ";
+    bottom: -6px;
+    left: 17%;
+    right: 0;
+    width: 65%;
+    height: 3px;
+    background-color: #713b8d;
+}
+
+/* Chart content*/
+.chart-content {
+    position: absolute;
+    width: 55%;
+    height: 65%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.518);
+}
+
+.chart-content .left-chart {
+    position: relative;
+    height: 100%;
+    width: 45%;
+    background-color: rgba(90, 61, 115, 0.899);
+}
+
+.left-chart .left-head {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-head h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+}
+
+.left-chart .below {
+    width: 100%;
+    height: 8vh;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.below p {
+    font-size: 1.08rem;
+    font-weight: 300;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.left-chart .contact-links {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.contact-links .contact-link-centering {
+    width: 85%;
+    margin-top: 25px;
+}
+
+.contact-link-centering  ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 350;
+    margin-bottom: 24px;
+    text-align: left;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.chart-content .right-chart {
+    position: relative;
+    height: 100%;
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+}
+
+.right-chart .right-head {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.right-head h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+/* arranging forms input and btns */
+
+.touch-forms {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+}
+ /* for all input  */
+input {
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #b8b6b6a5;
+    margin-bottom: 16px;
+    padding-left: 4px;
+    font-size: 0.89rem;
+    font-weight: 400;
+}
+
+/* for all placeholder */
+
+::placeholder {
+    padding-left: 4px;
+}
+
+/* all lable  */
+label {
+    margin-left: 4px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.touch-forms .first-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* for styling fullname and email input */
+.same-width {
+  width: 210px;
+}
+
+/* message input */
+.subject, .message_2 {
+    width: 437px;
+}
+
+
+
+textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #b8b6b6a5;
+    font-size: 0.89rem;
+    font-weight: 400;
+}
+
+.message_2 {
+  height: 80px;
+}
+
+/* send message button */
+
+.sub-mit {
+    width: 200px;
+    height: 60px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-mit button {
+    width: 120px ;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #713b8d;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.sub-mit button:hover {
+    background-color: white;
+    color: #713b8d;
+    border: 1px solid #713b8d;
+}
+
+
+
+/* arranging forms input and btns ends*/
+
+
+/* Chart content ends*/
+
+/* Get in touch (Chart) ends*/
+
+
+/* footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(200, 183, 216);
+}
+
+.foot-container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding: 30px;
+    padding: 40px;
+}
+
+.link-header p{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.left-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.right-foot ul li,.left-foot ul {
+    margin-top: 8px;
+}
+
+.right-foot ul li,.left-foot ul li {
+    list-style: none;
+   margin-top: 3px;
+   font-weight: 400;
+   font-size: 1.1rem;
+   color: #460a6eee; 
+}
+
+.right-foot ul li a,.left-foot ul li a{
+    text-decoration: none;
+    color: #460a6eee;
+}
+
+.right-foot ul li a:hover,.left-foot ul li a:hover{
+    color: #f3f3f3ee;
+}
+
+
+
+
+.left-one {
+    width: 320px;
+  
+}
+
+.copy-right {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(200, 183, 216);
+}
+
+.copy-right p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* footer ends*/
+
+
+/* Media query for screens with a width between 600px and 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .foot-container {
+        height: 45vh; 
+        background-color: rgb(200, 183, 216);
+    }
+
+    .heading {
+        width: 100%;
+        height: 10vh;
+    }
+     
+    .pay-heading h1 {
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+
+    .pay-ask p {
+      font-size: 1.3rem;
+      width: 750px;
+    }
+
+    .btn-contact a {
+        font-size: 1em; 
+    }
+ 
+    .timetable {
+        width: 100%;
+        height: 179vh;
+    }
+
+    .sub-tables .sub-1 {
+        width: 1000px;
+        height: 118%;
+    }
+
+    .sub-1 .table-drop  {
+        width: 95%; 
+    }
+ 
+
+    .table-drop:has(.checking:checked) {
+        height: 78vh;
+        transition: all 0.80s ease-in-out;
+    }
+    
+  
+    footer {
+        height: 80vh;
+    }
+
+    .footer-content  {
+       height: 70vh;
+       flex-direction: column;
+    }
+    
+    .side-para p{
+        width: 300px;
+    }
+    
+    .links ul li{
+        font-size: 16px;
+    }
+}
